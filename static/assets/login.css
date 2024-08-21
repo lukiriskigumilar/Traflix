@@ -1,0 +1,95 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.bg-image {
+    background-image: url("https://images.pexels.com/photos/3137890/pexels-photo-3137890.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 110%;
+    z-index: 1;
+}
+
+.bg-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    position: relative;
+    top: 46%;
+    transform: translateY(-50%);
+    padding: 60px 68px 68px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.signup-container h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.signup-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-container input {
+    background: #333;
+    border: 0;
+    color: #fff;
+    height: 30px;
+    line-height: 50px;
+    padding: 16px 20px;
+    margin-bottom: 10px;
+   
+}
+
+.signup-container .signup-btn {
+    background:#0987db;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signup-container .signup-btn:hover {
+    background: #0987db;
+}
+
+.signup-container .help-text {
+    color: #b3b3b3;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.signup-container .help-text a {
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.signup-container .help-text a:hover {
+    text-decoration: underline;
+}
+
+.image{
+    padding-top: 10;
+}
